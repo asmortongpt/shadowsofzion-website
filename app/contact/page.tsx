@@ -89,10 +89,10 @@ export default function Contact() {
         <div className="bg-band-dark rounded-lg p-8 mb-16">
           <h2 className="text-3xl font-metal text-band-red mb-8 text-center">FOLLOW US</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <a href="https://instagram.com/shadowsofzion" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-band-gold transition transform hover:scale-110">
+            <a href="https://instagram.com/shadowsofzionmusic" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-band-gold transition transform hover:scale-110">
               <div className="text-4xl mb-2">📷</div>
               <p className="font-bold">Instagram</p>
-              <p className="text-sm text-gray-500">@shadowsofzion</p>
+              <p className="text-sm text-gray-500">@shadowsofzionmusic</p>
             </a>
             <a href="https://facebook.com/shadowsofzion" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-band-gold transition transform hover:scale-110">
               <div className="text-4xl mb-2">📘</div>

@@ -24,8 +24,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">FOLLOW US</h4>
             <div className="space-y-2">
-              <a href="https://instagram.com/shadowsofzion" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-band-gold transition">
-                📷 Instagram: @shadowsofzion
+              <a href="https://instagram.com/shadowsofzionmusic" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-band-gold transition">
+                📷 Instagram: @shadowsofzionmusic
               </a>
               <a href="https://facebook.com/shadowsofzion" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-band-gold transition">
                 📘 Facebook: /shadowsofzion
