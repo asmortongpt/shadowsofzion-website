@@ -4,29 +4,6 @@ export const metadata = {
 }
 
 export default function About() {
-  const bandRoles = [
-    {
-      role: 'Lead Vocals / Guitar',
-      icon: '🎤',
-      description: 'Powerful vocals that carry the message of redemption with raw authenticity and passion.'
-    },
-    {
-      role: 'Lead Guitar',
-      icon: '🎸',
-      description: 'Driving guitar riffs that blend technical skill with spiritual conviction.'
-    },
-    {
-      role: 'Drums',
-      icon: '🥁',
-      description: 'Thunderous rhythms that provide the backbone of our sound and drive the message home.'
-    },
-    {
-      role: 'Bass',
-      icon: '🎸',
-      description: 'Deep bass lines and textures that add richness and complexity to every track.'
-    }
-  ]
-
   return (
     <div className="bg-black min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -63,7 +40,7 @@ export default function About() {
         </div>
 
         {/* Mission */}
-        <div className="bg-band-red rounded-lg p-12 mb-16 text-center">
+        <div className="bg-band-red rounded-lg p-12 text-center">
           <h2 className="text-4xl font-metal text-white mb-6">WHY WE DO THIS</h2>
           <p className="text-white text-xl leading-relaxed mb-6">
             We make music for the people who feel like they don't belong anywhere else.
@@ -75,29 +52,6 @@ export default function About() {
             <br />
             you're exactly who these songs are for.
           </p>
-        </div>
-
-        {/* The Band */}
-        <div>
-          <h2 className="text-5xl font-metal text-band-red mb-12 text-center">THE LINEUP</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {bandRoles.map((role, i) => (
-              <div key={i} className="bg-gradient-to-br from-band-dark to-black rounded-lg p-8 border-2 border-band-red/20 hover:border-band-red/50 hover:transform hover:scale-105 transition">
-                <div className="text-center mb-6">
-                  <div className="text-6xl mb-4">{role.icon}</div>
-                  <h3 className="text-2xl font-bold text-band-red mb-2">{role.role}</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed text-center">{role.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 p-6 bg-gradient-to-r from-band-red/20 to-band-dark rounded-lg text-center">
-            <p className="text-white text-lg">
-              <span className="text-band-gold font-bold">Want to know more about the band members?</span>
-              <br />
-              Follow us on social media for behind-the-scenes content and band updates!
-            </p>
-          </div>
         </div>
       </div>
     </div>
