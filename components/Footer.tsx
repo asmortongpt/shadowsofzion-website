@@ -33,7 +33,7 @@ export default function Footer() {
               <a href="https://tiktok.com/@shadowsofzion" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-band-gold transition">
                 🎵 TikTok: @shadowsofzion
               </a>
-              <a href="mailto:band@shadowsofzion.com" className="block text-gray-400 hover:text-band-gold transition">
+              <a href="mailto:band@shadowsofzion.com" className="block text-gray-400 hover:text-band-gold transition" data-cfasync="false">
                 📧 band@shadowsofzion.com
               </a>
             </div>

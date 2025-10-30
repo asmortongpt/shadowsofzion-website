@@ -23,7 +23,7 @@ export default function Contact() {
           <div className="bg-gradient-to-br from-band-dark to-black rounded-lg p-8 text-center">
             <div className="text-4xl mb-4">📧</div>
             <h3 className="text-xl font-bold text-band-red mb-2">GENERAL INQUIRIES</h3>
-            <a href="mailto:band@shadowsofzion.com" className="text-gray-300 hover:text-band-gold transition">
+            <a href="mailto:band@shadowsofzion.com" className="text-gray-300 hover:text-band-gold transition" data-cfasync="false">
               band@shadowsofzion.com
             </a>
           </div>
@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="bg-gradient-to-br from-band-dark to-black rounded-lg p-8 text-center">
             <div className="text-4xl mb-4">🎸</div>
             <h3 className="text-xl font-bold text-band-red mb-2">BOOKING & EVENTS</h3>
-            <a href="mailto:booking@shadowsofzion.com" className="text-gray-300 hover:text-band-gold transition">
+            <a href="mailto:booking@shadowsofzion.com" className="text-gray-300 hover:text-band-gold transition" data-cfasync="false">
               booking@shadowsofzion.com
             </a>
           </div>
@@ -41,7 +41,7 @@ export default function Contact() {
           <div className="bg-gradient-to-br from-band-dark to-black rounded-lg p-8 text-center">
             <div className="text-4xl mb-4">📰</div>
             <h3 className="text-xl font-bold text-band-red mb-2">PRESS & MEDIA</h3>
-            <a href="mailto:press@shadowsofzion.com" className="text-gray-300 hover:text-band-gold transition">
+            <a href="mailto:press@shadowsofzion.com" className="text-gray-300 hover:text-band-gold transition" data-cfasync="false">
               press@shadowsofzion.com
             </a>
           </div>
