@@ -68,10 +68,10 @@ export default function Home() {
             <p className="text-sm text-gray-400">Add your Spotify embed code here</p>
           </div>
 
-          {/* Streaming Buttons - ADD YOUR LINKS FROM CDBABY */}
+          {/* Streaming Buttons */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <a
-              href="https://open.spotify.com/artist/YOUR-ARTIST-ID"
+              href="https://open.spotify.com/album/51N7ZyePifyiLQgLOY9ho8"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition transform hover:scale-105"
@@ -79,7 +79,7 @@ export default function Home() {
               STREAM ON SPOTIFY
             </a>
             <a
-              href="https://music.apple.com/us/artist/YOUR-ARTIST-ID"
+              href="https://music.apple.com/us/album/dust-to-glory/1849248646"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-lg transition transform hover:scale-105"
@@ -87,7 +87,7 @@ export default function Home() {
               LISTEN ON APPLE MUSIC
             </a>
             <a
-              href="https://music.amazon.com/artists/YOUR-ARTIST-ID"
+              href="https://music.amazon.com/search/shadows%20of%20zion"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition transform hover:scale-105"
@@ -96,7 +96,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-sm text-gray-400 mt-6 text-center">
-            Every stream counts! Replace these links with your real streaming URLs from CDBaby.
+            Every stream counts! Support Shadows of Zion on your favorite platform.
             <br />
             You get paid $0.003-$0.005 per Spotify stream.
           </p>

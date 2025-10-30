@@ -55,10 +55,10 @@ export default function Music() {
             </p>
           </div>
 
-          {/* Streaming Buttons - REPLACE WITH YOUR REAL LINKS */}
+          {/* Streaming Buttons */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
-              href="https://open.spotify.com/album/YOUR-ALBUM-ID"
+              href="https://open.spotify.com/album/51N7ZyePifyiLQgLOY9ho8"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg transition text-center transform hover:scale-105"
@@ -66,7 +66,7 @@ export default function Music() {
               STREAM ON SPOTIFY
             </a>
             <a
-              href="https://music.apple.com/us/album/YOUR-ALBUM-ID"
+              href="https://music.apple.com/us/album/dust-to-glory/1849248646"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-6 rounded-lg transition text-center transform hover:scale-105"
@@ -74,7 +74,7 @@ export default function Music() {
               APPLE MUSIC
             </a>
             <a
-              href="https://music.amazon.com/albums/YOUR-ALBUM-ID"
+              href="https://music.amazon.com/search/shadows%20of%20zion"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition text-center transform hover:scale-105"
@@ -84,10 +84,10 @@ export default function Music() {
           </div>
           <div className="mt-6 p-4 bg-black rounded-lg border border-band-gold">
             <p className="text-band-gold text-center font-semibold">
-              YOU GET PAID WHEN PEOPLE STREAM YOUR MUSIC
+              STREAM "DUST TO GLORY" NOW
             </p>
             <p className="text-gray-400 text-sm text-center mt-2">
-              Replace "YOUR-ALBUM-ID" with real links from CDBaby → Every stream = $0.003-$0.005 in your pocket
+              Every stream supports our ministry → Share the music and spread the message!
             </p>
           </div>
         </div>
