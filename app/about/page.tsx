@@ -14,44 +14,170 @@ export default function About() {
         </div>
 
         {/* Band Story */}
-        <div className="bg-gradient-to-br from-band-dark to-black rounded-lg p-12 mb-16">
-          <p className="text-gray-300 text-xl leading-relaxed mb-6">
-            Look, we're not going to pretend we have it all figured out. This band started because
-            we needed somewhere to put all the mess - the questions, the doubts, the fights with God.
-            Turns out, when you're honest about the struggle, that's when real faith shows up.
+        <div className="bg-gradient-to-br from-band-dark to-black rounded-lg p-12 mb-16 border-l-4 border-band-red">
+          <blockquote className="text-band-gold text-2xl italic mb-8 border-l-4 border-band-gold pl-6">
+            "Can these bones live?" - Ezekiel 37:3
+          </blockquote>
+
+          <p className="text-white text-2xl font-bold mb-6">
+            We started in a valley of dry bones.
           </p>
+
           <p className="text-gray-300 text-xl leading-relaxed mb-6">
-            The name came from realizing we spend a lot of time in the shadows. Life beats you down,
-            you question everything, and sometimes faith feels like holding onto smoke. But there's
-            this pull toward something better - toward Zion, toward home, toward actually being okay.
-            We're somewhere in between. Most days, anyway.
+            Not metaphorically. Not poetically. <span className="text-white font-semibold">Literally</span> - spiritually dead,
+            emotionally bankrupt, staring at the wreckage of what we thought faith was supposed to be.
+            Church didn't have answers for the real questions. Religion couldn't handle the real pain.
+            And somewhere between the Sunday morning smile and the Saturday night breakdown, we realized:
+            <span className="text-band-gold font-semibold"> if we're going to survive this, we need to stop pretending.</span>
           </p>
+
           <p className="text-gray-300 text-xl leading-relaxed mb-6">
-            We play loud because quiet doesn't cut it when you're trying to drown out the noise in your head.
-            We write songs about the stuff that actually keeps you up at 3 AM - not the sanitized church version,
-            but the real version. The one where you're pissed off, confused, and still somehow hoping God's listening.
+            So we picked up guitars instead of hiding behind hymns. We cranked the amps instead of keeping quiet.
+            We started writing songs about the <span className="text-white">3 AM panic attacks</span>, the
+            <span className="text-white"> unanswered prayers</span>, the <span className="text-white">nights
+            you're so angry at God you can barely breathe</span> - and the mornings you wake up and somehow,
+            impossibly, there's still a spark. Still a pull. Still this stubborn hope that maybe,
+            just maybe, resurrection is real.
           </p>
+
+          <div className="bg-black rounded-lg p-8 mb-6 border border-band-gold">
+            <p className="text-band-gold text-xl font-semibold mb-4">The name says it all:</p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              <span className="text-white font-bold">Shadows</span> - because we're honest about the darkness.
+              The depression. The doubt. The places where faith feels more like fumbling in the dark than walking in the light.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed mt-4">
+              <span className="text-white font-bold">Of Zion</span> - because even in the shadows, we're moving toward
+              something. Toward home. Toward healing. Toward the God who meets us in the valley and breathes life into dead things.
+            </p>
+          </div>
+
+          <p className="text-gray-300 text-xl leading-relaxed mb-6">
+            We play <span className="text-band-red font-bold">LOUD</span> because whispers get drowned out by the
+            screaming in your head. We play <span className="text-band-red font-bold">HARD</span> because
+            gentle doesn't cut it when you're fighting demons. We play <span className="text-band-red font-bold">REAL</span> because
+            fake Christianity is what broke us in the first place.
+          </p>
+
+          <p className="text-gray-300 text-xl leading-relaxed mb-6">
+            These songs aren't the sanitized, radio-friendly, "everything's fine" version of faith.
+            These are the songs for <span className="text-white">the ones who've been beaten down</span>,
+            <span className="text-white"> the ones who've questioned everything</span>,
+            <span className="text-white"> the ones who've looked God straight in the eye and said
+            "I don't understand You, but I'm not letting go."</span>
+          </p>
+
+          <p className="text-white text-2xl font-bold mb-4">
+            From Dust to Glory.
+          </p>
+
           <p className="text-gray-300 text-xl leading-relaxed">
-            This isn't music for people who have their lives together. It's for everyone else -
-            the ones who are tired of pretending, who've screwed up more times than they can count,
-            and who are still showing up because maybe, just maybe, there's something on the other side
-            of all this dust.
+            That's not just an album title. That's the journey. From the ashes of what we thought we knew,
+            to the fire that refines what actually matters. From the valley where hope died, to the moment
+            breath returns to dry bones. From the shadows where we're afraid and angry and broken,
+            to Zion - where we're finally, impossibly, somehow... <span className="text-band-gold font-bold text-2xl">home</span>.
           </p>
+
+          <div className="mt-8 pt-8 border-t border-band-gold">
+            <p className="text-gray-400 italic text-lg">
+              If you've ever felt more like dust than glory, if you've ever been too broken for Sunday morning,
+              if you've ever loved God and hated religion in the same breath -
+              <span className="text-band-gold font-semibold"> welcome. You're exactly where you're supposed to be.</span>
+            </p>
+          </div>
         </div>
 
         {/* Mission */}
-        <div className="bg-band-red rounded-lg p-12 text-center">
-          <h2 className="text-4xl font-metal text-white mb-6">WHY WE DO THIS</h2>
-          <p className="text-white text-xl leading-relaxed mb-6">
-            We make music for the people who feel like they don't belong anywhere else.
-            The ones churches sometimes don't know what to do with. The messy ones. The angry ones.
-            The ones who love God but can't stand religion. That's our crowd.
+        <div className="bg-gradient-to-br from-band-red to-black rounded-lg p-12 mb-16 border-2 border-band-gold">
+          <h2 className="text-5xl font-metal text-white mb-8 text-center">WHY WE DO THIS</h2>
+
+          <div className="max-w-4xl mx-auto">
+            <p className="text-white text-2xl leading-relaxed mb-8 text-center font-semibold">
+              Because someone needs to make music for the misfits.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-black bg-opacity-50 rounded-lg p-6 border-l-4 border-band-gold">
+                <h3 className="text-band-gold font-bold text-xl mb-3">For the Broken</h3>
+                <p className="text-gray-300">
+                  The ones who've been told they're "too much" for church. Too loud. Too damaged. Too honest.
+                  Too real. We say you're not too much - you're exactly enough.
+                </p>
+              </div>
+
+              <div className="bg-black bg-opacity-50 rounded-lg p-6 border-l-4 border-band-gold">
+                <h3 className="text-band-gold font-bold text-xl mb-3">For the Doubters</h3>
+                <p className="text-gray-300">
+                  The ones who have more questions than answers. Who've wrestled with God and walked away limping.
+                  Who keep showing up even when it doesn't make sense. Your doubts don't disqualify you.
+                </p>
+              </div>
+
+              <div className="bg-black bg-opacity-50 rounded-lg p-6 border-l-4 border-band-gold">
+                <h3 className="text-band-gold font-bold text-xl mb-3">For the Fighters</h3>
+                <p className="text-gray-300">
+                  The ones battling demons no one else can see. Fighting addictions, depression, anxiety,
+                  trauma - and still refusing to give up. Your scars are proof you're a survivor.
+                </p>
+              </div>
+
+              <div className="bg-black bg-opacity-50 rounded-lg p-6 border-l-4 border-band-gold">
+                <h3 className="text-band-gold font-bold text-xl mb-3">For the Outcasts</h3>
+                <p className="text-gray-300">
+                  The ones who don't fit the Christian stereotype. Who love God but can't do the
+                  religious performance. Who'd rather be honest than acceptable. Welcome home.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-black rounded-lg p-8 mb-6">
+              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                We're not here to water down the message. We're not here to make Christianity comfortable or easy or safe.
+              </p>
+              <p className="text-white text-xl leading-relaxed font-semibold">
+                We're here to say: <span className="text-band-gold">the valley of dry bones is real,
+                but so is the resurrection</span>.
+              </p>
+            </div>
+
+            <blockquote className="border-l-4 border-band-gold pl-6 mb-8">
+              <p className="text-white text-2xl italic mb-4">
+                "Then He said to me, 'Prophesy to these bones and say to them, "Dry bones, hear the word of the LORD!"'"
+              </p>
+              <p className="text-band-gold text-lg">- Ezekiel 37:4</p>
+            </blockquote>
+
+            <div className="text-center bg-black bg-opacity-70 rounded-lg p-8 border-2 border-band-gold">
+              <p className="text-band-gold text-3xl font-bold mb-4">
+                IF YOU'VE EVER FELT MORE LIKE DUST THAN GLORY...
+              </p>
+              <p className="text-white text-xl mb-4">
+                If Sunday morning feels fake but Saturday night feels hopeless...
+              </p>
+              <p className="text-white text-xl mb-4">
+                If you love God but can't stand religion...
+              </p>
+              <p className="text-white text-xl mb-6">
+                If you're broken, angry, questioning, fighting, and still somehow believing...
+              </p>
+              <p className="text-band-gold text-2xl font-bold">
+                These songs are for you. This band is for you. You belong here.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <p className="text-gray-400 text-lg mb-6">
+            We're not promising you answers. We're promising you you're not alone in the questions.
           </p>
-          <p className="text-band-gold text-xl font-semibold">
-            If you've ever felt more like dust than glory,
-            <br />
-            you're exactly who these songs are for.
-          </p>
+          <a
+            href="/music"
+            className="inline-block bg-band-red hover:bg-red-700 text-white font-bold text-xl py-4 px-12 rounded-lg transition transform hover:scale-105 border-2 border-band-gold"
+          >
+            HEAR THE STORY → DUST TO GLORY
+          </a>
         </div>
       </div>
     </div>
