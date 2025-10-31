@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from './analytics'
 
 interface Track {
   number: number
@@ -201,6 +202,7 @@ export default function Music() {
               href="https://open.spotify.com/album/51N7ZyePifyiLQgLOY9ho8"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent('streaming_click', { platform: 'spotify', location: 'main_buttons' })}
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg transition text-center transform hover:scale-105"
             >
               STREAM ON SPOTIFY
@@ -209,6 +211,7 @@ export default function Music() {
               href="https://music.apple.com/us/album/dust-to-glory/1849248646"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent('streaming_click', { platform: 'apple_music', location: 'main_buttons' })}
               className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-6 rounded-lg transition text-center transform hover:scale-105"
             >
               APPLE MUSIC
@@ -217,6 +220,7 @@ export default function Music() {
               href="https://music.amazon.com/search/shadows%20of%20zion"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent('streaming_click', { platform: 'amazon_music', location: 'main_buttons' })}
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition text-center transform hover:scale-105"
             >
               AMAZON MUSIC
@@ -240,7 +244,13 @@ export default function Music() {
             {tracks.map((track) => (
               <button
                 key={track.number}
-                onClick={() => setSelectedTrack(track)}
+                onClick={() => {
+                  setSelectedTrack(track)
+                  trackEvent('track_clicked', {
+                    trackNumber: track.number,
+                    trackTitle: track.title
+                  })
+                }}
                 className="flex items-center py-3 px-4 bg-black rounded-lg hover:bg-gray-900 hover:border-band-gold border border-transparent transition transform hover:scale-105 cursor-pointer text-left"
               >
                 <span className="text-band-gold font-bold mr-4">{track.number.toString().padStart(2, '0')}</span>
@@ -289,6 +299,12 @@ export default function Music() {
                         href="https://open.spotify.com/album/51N7ZyePifyiLQgLOY9ho8"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackEvent('streaming_click', {
+                          platform: 'spotify',
+                          location: 'track_modal',
+                          trackNumber: selectedTrack.number,
+                          trackTitle: selectedTrack.title
+                        })}
                         className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition"
                       >
                         PLAY ON SPOTIFY
