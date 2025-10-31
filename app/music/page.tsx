@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { trackEvent } from './analytics'
+import { trackEvent } from '../analytics'
 
 interface Track {
   number: number
