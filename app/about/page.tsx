@@ -24,17 +24,17 @@ export default function About() {
           </p>
 
           <p className="text-gray-300 text-xl leading-relaxed mb-6">
-            Not metaphorically. Not poetically. <span className="text-white font-semibold">Literally</span> - spiritually dead,
-            emotionally bankrupt, staring at the wreckage of what we thought faith was supposed to be.
-            Church didn't have answers for the real questions. Religion couldn't handle the real pain.
-            And somewhere between the Sunday morning smile and the Saturday night breakdown, we realized:
-            <span className="text-band-gold font-semibold"> if we're going to survive this, we need to stop pretending.</span>
+            This music exists for a specific kind of person. Not metaphorically. Not poetically.
+            <span className="text-white font-semibold"> The ones who are literally</span> spiritually dead,
+            emotionally bankrupt, staring at the wreckage of what they thought faith was supposed to be.
+            When church doesn't have answers for the real questions. When religion can't handle the real pain.
+            When somewhere between the Sunday morning smile and the Saturday night breakdown, you realize:
+            <span className="text-band-gold font-semibold"> if you're going to survive this, you need to stop pretending.</span>
           </p>
 
           <p className="text-gray-300 text-xl leading-relaxed mb-6">
-            So we picked up guitars instead of hiding behind hymns. We cranked the amps instead of keeping quiet.
-            We started writing songs about the <span className="text-white">3 AM panic attacks</span>, the
-            <span className="text-white"> unanswered prayers</span>, the <span className="text-white">nights
+            These songs give voice to what gets silenced everywhere else. The <span className="text-white">3 AM panic attacks</span>.
+            The <span className="text-white">unanswered prayers</span>. The <span className="text-white">nights
             you're so angry at God you can barely breathe</span> - and the mornings you wake up and somehow,
             impossibly, there's still a spark. Still a pull. Still this stubborn hope that maybe,
             just maybe, resurrection is real.
@@ -43,25 +43,25 @@ export default function About() {
           <div className="bg-black rounded-lg p-8 mb-6 border border-band-gold">
             <p className="text-band-gold text-xl font-semibold mb-4">The name says it all:</p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              <span className="text-white font-bold">Shadows</span> - because we're honest about the darkness.
+              <span className="text-white font-bold">Shadows</span> - for the honesty about darkness.
               The depression. The doubt. The places where faith feels more like fumbling in the dark than walking in the light.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed mt-4">
-              <span className="text-white font-bold">Of Zion</span> - because even in the shadows, we're moving toward
-              something. Toward home. Toward healing. Toward the God who meets us in the valley and breathes life into dead things.
+              <span className="text-white font-bold">Of Zion</span> - because even in the shadows, there's movement toward
+              something. Toward home. Toward healing. Toward the God who meets people in the valley and breathes life into dead things.
             </p>
           </div>
 
           <p className="text-gray-300 text-xl leading-relaxed mb-6">
-            We play <span className="text-band-red font-bold">LOUD</span> because whispers get drowned out by the
-            screaming in your head. We play <span className="text-band-red font-bold">HARD</span> because
-            gentle doesn't cut it when you're fighting demons. We play <span className="text-band-red font-bold">REAL</span> because
-            fake Christianity is what broke us in the first place.
+            This is <span className="text-band-red font-bold">LOUD</span> music because whispers get drowned out by the
+            screaming in your head. It's <span className="text-band-red font-bold">HARD</span> because
+            gentle doesn't cut it when you're fighting demons. It's <span className="text-band-red font-bold">REAL</span> because
+            fake Christianity is what breaks people in the first place.
           </p>
 
           <p className="text-gray-300 text-xl leading-relaxed mb-6">
             These songs aren't the sanitized, radio-friendly, "everything's fine" version of faith.
-            These are the songs for <span className="text-white">the ones who've been beaten down</span>,
+            This is music for <span className="text-white">the ones who've been beaten down</span>,
             <span className="text-white"> the ones who've questioned everything</span>,
             <span className="text-white"> the ones who've looked God straight in the eye and said
             "I don't understand You, but I'm not letting go."</span>
@@ -72,17 +72,17 @@ export default function About() {
           </p>
 
           <p className="text-gray-300 text-xl leading-relaxed">
-            That's not just an album title. That's the journey. From the ashes of what we thought we knew,
+            That's not just an album title. That's the journey this music is about. From the ashes of what you thought you knew,
             to the fire that refines what actually matters. From the valley where hope died, to the moment
-            breath returns to dry bones. From the shadows where we're afraid and angry and broken,
-            to Zion - where we're finally, impossibly, somehow... <span className="text-band-gold font-bold text-2xl">home</span>.
+            breath returns to dry bones. From the shadows where you're afraid and angry and broken,
+            to Zion - where you're finally, impossibly, somehow... <span className="text-band-gold font-bold text-2xl">home</span>.
           </p>
 
           <div className="mt-8 pt-8 border-t border-band-gold">
             <p className="text-gray-400 italic text-lg">
               If you've ever felt more like dust than glory, if you've ever been too broken for Sunday morning,
               if you've ever loved God and hated religion in the same breath -
-              <span className="text-band-gold font-semibold"> welcome. You're exactly where you're supposed to be.</span>
+              <span className="text-band-gold font-semibold"> this music is for you. You're exactly where you're supposed to be.</span>
             </p>
           </div>
         </div>
