@@ -178,8 +178,7 @@ export default function Music() {
               walked through the valley and emerged stronger on the other side.
             </p>
             <p className="text-band-gold text-lg font-semibold">
-              Every stream supports our ministry and helps us reach more people with
-              this message of hope.
+              Every stream helps us keep making music for the ones who don't fit anywhere else.
             </p>
           </div>
         </div>
@@ -231,7 +230,7 @@ export default function Music() {
               STREAM "DUST TO GLORY" NOW
             </p>
             <p className="text-gray-400 text-sm text-center mt-2">
-              Every stream supports our ministry → Share the music and spread the message!
+              Every stream helps us keep making honest music → If this resonates with you, share it with someone who needs to hear it.
             </p>
           </div>
         </div>
