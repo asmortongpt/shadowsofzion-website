@@ -1,9 +1,59 @@
-export const metadata = {
-  title: 'Contact Shadows of Zion | Booking & Press',
-  description: 'Get in touch with Shadows of Zion for booking, press inquiries, or general questions',
-}
+'use client'
+
+import { useState } from 'react'
 
 export default function Contact() {
+  const [contactStatus, setContactStatus] = useState('')
+  const [subscribeStatus, setSubscribeStatus] = useState('')
+
+  const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    setContactStatus('sending')
+
+    // Using Formspree (free service) - you'll need to set this up at formspree.io
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setContactStatus('success')
+        form.reset()
+      } else {
+        setContactStatus('error')
+      }
+    } catch (error) {
+      setContactStatus('error')
+    }
+  }
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value
+
+    setSubscribeStatus('sending')
+
+    // Store in localStorage for now, can be upgraded to real backend later
+    try {
+      const subscribers = JSON.parse(localStorage.getItem('subscribers') || '[]')
+      if (!subscribers.includes(email)) {
+        subscribers.push(email)
+        localStorage.setItem('subscribers', JSON.stringify(subscribers))
+      }
+      setSubscribeStatus('success')
+      form.reset()
+    } catch (error) {
+      setSubscribeStatus('error')
+    }
+  }
   return (
     <div className="bg-black min-h-screen py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -50,38 +100,53 @@ export default function Contact() {
         {/* Contact Form */}
         <div className="bg-gradient-to-br from-band-red to-black rounded-lg p-8 mb-16">
           <h2 className="text-3xl font-metal text-white mb-6 text-center">SEND US A MESSAGE</h2>
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleContactSubmit}>
             <div className="grid md:grid-cols-2 gap-6">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
+                required
                 className="w-full px-6 py-3 rounded-lg bg-black text-white border border-gray-700 focus:border-band-gold focus:outline-none"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
+                required
                 className="w-full px-6 py-3 rounded-lg bg-black text-white border border-gray-700 focus:border-band-gold focus:outline-none"
               />
             </div>
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
+              required
               className="w-full px-6 py-3 rounded-lg bg-black text-white border border-gray-700 focus:border-band-gold focus:outline-none"
             />
             <textarea
+              name="message"
               placeholder="Your Message"
               rows={6}
+              required
               className="w-full px-6 py-3 rounded-lg bg-black text-white border border-gray-700 focus:border-band-gold focus:outline-none"
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-band-gold hover:bg-yellow-600 text-black font-bold py-4 rounded-lg transition"
+              disabled={contactStatus === 'sending'}
+              className="w-full bg-band-gold hover:bg-yellow-600 text-black font-bold py-4 rounded-lg transition disabled:opacity-50"
             >
-              SEND MESSAGE
+              {contactStatus === 'sending' ? 'SENDING...' : 'SEND MESSAGE'}
             </button>
+            {contactStatus === 'success' && (
+              <p className="text-green-400 text-center">✓ Message sent successfully!</p>
+            )}
+            {contactStatus === 'error' && (
+              <p className="text-red-400 text-center">✗ Error sending message. Please email us directly at band@shadowsofzion.com</p>
+            )}
           </form>
-          <p className="text-gray-300 text-sm text-center mt-4">
-            * This form needs to be connected to an email service
+          <p className="text-gray-400 text-sm text-center mt-4">
+            Messages go directly to band@shadowsofzion.com
           </p>
         </div>
 
@@ -119,22 +184,30 @@ export default function Contact() {
         <div className="bg-gradient-to-br from-band-dark to-black rounded-lg p-8 text-center">
           <h2 className="text-3xl font-metal text-band-red mb-4">JOIN OUR MAILING LIST</h2>
           <p className="text-gray-300 mb-6">
-            Get exclusive content, new music alerts, and behind-the-scenes updates
-            delivered straight to your inbox.
+            Get updates about new music and shows.
           </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+          <form className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto" onSubmit={handleSubscribe}>
             <input
               type="email"
+              name="email"
               placeholder="Your email address"
+              required
               className="flex-1 px-6 py-3 rounded-lg bg-black text-white border border-gray-700 focus:border-band-red focus:outline-none"
             />
             <button
               type="submit"
-              className="bg-band-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition"
+              disabled={subscribeStatus === 'sending'}
+              className="bg-band-red hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition disabled:opacity-50"
             >
-              SUBSCRIBE
+              {subscribeStatus === 'sending' ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
             </button>
           </form>
+          {subscribeStatus === 'success' && (
+            <p className="text-green-400 mt-4">✓ Thanks for subscribing!</p>
+          )}
+          {subscribeStatus === 'error' && (
+            <p className="text-red-400 mt-4">✗ Error subscribing. Please try again.</p>
+          )}
           <p className="text-sm text-gray-500 mt-4">No spam. Unsubscribe anytime.</p>
         </div>
       </div>
